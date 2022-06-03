@@ -14,7 +14,7 @@ namespace ExpPro
             //india is my country india is best
             // india is 
 
-
+            Console.WriteLine("enter a string");
             string s = Console.ReadLine();
             string s1=s.ToLower();
             string []s2=s1.Split(' ');
@@ -267,12 +267,229 @@ namespace ExpPro
                 }
                 k = 1;
             }
-            for (i = 0;i < n; i++) { 
-                if (arr3[i] == 2) { l++; }
+            for (i = 0;i < n; i++)
+            { 
+                if (arr3[i] == 2)
+                { l++;
+                }
             }
             Console.WriteLine("the number of duplicate elements are {0}  ",l);
         }
     }
+    class First
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter a string");
+            string s = Console.ReadLine();
+            string [] arr = s.Split(' ');  
+            int count;
+            for (int i=0;i<arr.Length;i++)
+            {
+                count = 1;
+                for (int j=i+1;j<arr.Length;j++)
+                {
+                    if (arr[i].Equals(arr[j]))
+                    {
+                        count++;
+                        arr[j] = "0";
+                    }
+                }
+                if (count>1 && arr[i]!="0")
+                {
+                    Console.WriteLine(arr[i]);
+                }
+            }
 
-   
+        }
+
+    }
+    class String
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter a string ");
+            string str = "Dhiraj Wagh";
+            Console.WriteLine(str);
+        }
+    }
+ 
+    class String1
+    {
+        static void Main(string[] args)
+        {
+            string str = "Dhiraj Wagh";
+            int l = 0;
+            for (int i = 0; i < str.Length; i++)
+            {
+                l++;
+            }
+            Console.WriteLine(l);
+
+        }
+    }
+    class String2
+    {//Write a program in C# Sharp to separate the individual characters from a string
+        static void Main(string[] args)
+        {
+            string s = "dhiraj wagh";
+            int i = 0;
+            while(i<=s.Length-1)
+            {
+                Console.WriteLine("{0}",s[i]);
+                i++;
+            }
+            
+        }
+    }
+    //class Example
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        int[] arr = new int[6];
+    //        for (int i = 0; i < arr.Length; i++)
+    //        {
+    //            arr[i] = Convert.ToInt32(Console.ReadLine());
+    //        }
+    //        int count = 0;
+    //        Array.Sort(arr);
+    //        int bb1 = 0;
+
+    //        int sum = Convert.ToInt32(Console.ReadLine());
+    //        int[] temp = new int[arr.Length];
+    //        for (int i = 0; i < arr.Length; i++)
+    //        {
+    //            count = 0;
+    //            int rem = sum;
+    //            Array.Clear(temp, 0, temp.Count() - 1);
+    //            for (int j = i; j < arr.Length; j++)
+    //            {
+
+    //                if (rem >= arr[j])
+    //                {
+    //                    temp[count] = arr[j];
+    //                    rem = rem - arr[j];
+    //                    count++;
+    //                }
+    //                for (int l = j; l < arr.Length; l++)
+    //                {
+    //                    if (rem == arr[l])
+    //                    {
+    //                        temp[count] = arr[l];
+    //                        bb1++;
+    //                    }
+    //                }
+    //                if (temp.Sum() == sum || bb1 > 0)
+    //                {
+    //                    bb1++;
+    //                    break;
+    //                }
+    //            }
+    //            if (bb1 > 0)
+    //                break;
+
+
+    //        }
+    //        foreach (dynamic d in temp)
+    //        {
+    //            if (d > 0 || d < 0)
+    //                Console.Write(" " + d);
+    //        }
+    //        Console.WriteLine();
+
+    //    }
+    //}
+    class REv
+    {
+        static void Main(string[] args)
+        {
+            string s = "dhiraj wagh";
+            string[] s1 = s.Split();
+            for (int i = 0; i < s1.Length; i++)
+            {
+               string word =s1[i];
+                for (int j=word.Length-1;j>=0;j-- )
+                {
+                    Console.Write(word[j]);
+                    
+                }
+                Console.Write(" ");
+            }
+        }
+    }
+
+    class First1
+    {
+        static void Main(string[] args)
+        {
+            string s = "Dhiraj Wagh R";
+            int i = 0;
+            int wrd = 1;
+            while(i<s.Length-1)
+            {
+                if (s[i] == ' ')
+                {
+                    wrd++;
+                }
+                i++;
+            }
+            Console.WriteLine(wrd);
+        } 
+    }
+    class Second1
+    {
+        static void Main(string[] args)
+        {
+            string s = "dhiraj wagh";
+            int i = 0;
+            int wrd = 1;
+            while( i<=s.Length-1)
+            {
+                if (s[i] == ' ')
+                {
+                    wrd++;
+                }
+                i++;
+            }
+            Console.WriteLine(wrd);
+        }
+    }
+    class Third
+    { //total char in string 
+        static void Main(string[] args)
+        {
+            string s = "dhiraj";
+            int i = 0;
+            foreach(char ch in s)
+            {
+                i = i + 1;
+            }
+            Console.WriteLine(i);
+        }
+    }
+    class Fourth
+    {
+        static void Main(string[] args)
+        {
+            string s = "dhiraj ramesh wagh";
+            int vowel=0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == 'a'||s[i] == 'e'|| s[i] == 'i'|| s[i] == 'o'|| s[i] == 'u')
+                {
+                    vowel++;
+                }
+            }
+            Console.WriteLine(vowel);
+        }
+    }
+    class At
+    {
+        static void Main(string[] args)
+        {
+            
+
+        }
+    }
+
 }
